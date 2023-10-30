@@ -32,7 +32,7 @@
 		}
 
 		.navMenu a {
-			color: #272727;
+			color: #32CD32;
 			text-decoration: none;
 			text-transform: uppercase;
 			display: inline-block;
@@ -40,7 +40,7 @@
 		}
 
 		.background {
-			background-color: #ece5f0;
+			background-color: #DCDCDC;
 		}
 
 		.border {
@@ -50,7 +50,7 @@
 
 		.navMenu a:hover {
 
-			color: #d09c0b;
+			color: #DC143C;
 		}
 	</style>
 </head>
@@ -67,17 +67,13 @@
 		<a id="finance" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-money-bill-wave"></i> Finanças</a>
 		<a id="objectives" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-goland"></i> Desafios</a>
 		<a id="brain" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-brain"></i> Intelectual</a>
-		<!-- <a id="resourses" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-wrench"></i> Resourses</a>
-		<a id="lifewiki" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> Lifewiki</a> -->
-
-
 
 	</nav>
 
 
 	<script>
 
-		let direction = "horizontal";
+		let direction = "vertical";
 		if (direction === "vertical") {
 			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
 		}
