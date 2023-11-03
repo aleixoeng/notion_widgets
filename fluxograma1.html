@@ -9,7 +9,8 @@
 <body>
   <pre class="mermaid">
     flowchart LR
-    A(("DADM"))-->B(("PORT"))-->C(("DTRIB"))-->D(("CONTB"))-->E(("DCONS"))-->F(("TI"))-->G(("RLM"))-->A
+    A(("DADM"))-->B(("PORT"))-->C(("DTRIB"))-->D(("CONTB"))-->E(("DCONS"))-->F(("TI"))-->G(("RLM"))
+    G-->A
 click A "https://www.notion.so/DIREITO-ADMINISTRATIVO-1a09345921eb4145b7c595ee88d6f1f5?pvs=4"
 click B "https://www.notion.so/PORTUGU-S-2d0c6e425c724140b19b58e7408f86f0?pvs=4"
 click C "https://www.notion.so/DIREITO-TRIBUT-RIO-67402db4ca8447c2be50daa00f7dab02?pvs=4"
@@ -28,6 +29,9 @@ click F "https://www.notion.so/TECNOLOGIA-DA-INFORMA-O-620dfaba754a4376b03a53fc3
       securityLevel: 'loose',
     };
     mermaid.initialize(config);
+    mermaid.flowchartConfig = {
+    width: 100%
+}
   </script>
 </body>
 </html>
